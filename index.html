@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eshaan Sarosh G J | AI and Automation Developer</title>
+<meta name="description" content="Portfolio of Eshaan Sarosh G J, an AI and Automation Developer and engineering student in Bengaluru.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=DM+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+:root{--accent:#C9A86A}
+body{margin:0;background:#12171C}
+.pg{--bg:#12171C;--sf:#1A2229;--ln:#2B353E;--tx:#ECE8E1;--mu:#A9B2BB;font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--tx);box-sizing:border-box;overflow:hidden;width:100%}
+.pg *{box-sizing:border-box}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+.serif{font-family:'Instrument Serif',Georgia,serif;font-weight:400}
+@keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes flo{50%{transform:translateY(-8px)}}
+@keyframes grow{from{width:0}to{width:64px}}
+.a{opacity:0;animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}.d4{animation-delay:.55s}.d5{animation-delay:.7s}
+.nav{display:flex;justify-content:flex-end;align-items:center;padding:28px 0}
+.logo{font-size:28px;color:var(--tx);text-decoration:none}
+.nl a{color:var(--mu);text-decoration:none;margin-left:32px;font-size:15px;position:relative;padding:12px 0;display:inline-block;transition:color .3s}
+.nl a::after{content:"";position:absolute;left:0;bottom:6px;height:1px;width:0;background:var(--accent);transition:width .3s}
+.nl a:hover{color:var(--tx)}.nl a:hover::after{width:100%}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:center;padding:64px 0 110px}
+.eyebrow{color:var(--accent);letter-spacing:.18em;text-transform:uppercase;font-size:13px;font-weight:500;display:flex;align-items:center;gap:14px}
+.eyebrow::before{content:"";height:1px;background:var(--accent);animation:grow 1s .3s both}
+.hn{font-size:92px;line-height:1.02;margin:22px 0 24px;letter-spacing:-.01em}
+.hn em{color:var(--accent)}
+.lead{font-size:19px;line-height:1.65;color:var(--mu);max-width:540px;margin:0 0 36px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;min-height:48px;border-radius:999px;font-weight:500;font-size:15px;text-decoration:none;margin-right:14px;transition:transform .3s,box-shadow .3s,border-color .3s,color .3s}
+.btn svg{transition:transform .3s}.btn:hover svg{transform:translateX(5px)}
+.b1{background:var(--accent);color:#12171C}.b1:hover{transform:translateY(-3px);box-shadow:0 14px 30px -12px var(--accent)}
+.b2{border:1px solid var(--ln);color:var(--tx)}.b2:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-3px)}
+.phw{position:relative;animation:flo 7s ease-in-out infinite}
+.phw::before{content:"";position:absolute;inset:20px -20px -20px 20px;border:1px solid var(--accent);border-radius:260px 260px 22px 22px;opacity:.45;transition:transform .5s,opacity .5s}
+.phw:hover::before{transform:translate(8px,8px);opacity:.8}
+.ph{overflow:hidden;position:relative;aspect-ratio:4/5;width:100%;border-radius:260px 260px 22px 22px;background:linear-gradient(160deg,#212C35,#161D23);border:1px solid var(--ln);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--mu);text-align:center;padding:24px}
+.ph b{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:28px;color:var(--tx)}
+.ph span{font-size:14px}
+.sec{padding:100px 0;border-top:1px solid var(--ln)}
+.sh{display:flex;align-items:baseline;gap:22px;margin-bottom:52px}
+.sn{color:var(--accent);font-size:14px;letter-spacing:.18em}
+.sh h2{font-size:56px;margin:0;line-height:1.05}
+.two{display:grid;grid-template-columns:1.2fr .8fr;gap:72px}
+.big{font-size:32px;line-height:1.35;margin:0}
+.big em{color:var(--accent)}
+.fact{display:flex;justify-content:space-between;gap:20px;padding:20px 0;border-bottom:1px solid var(--ln);transition:padding .35s,border-color .35s}
+.fact:hover{padding-left:12px;border-color:var(--accent)}
+.fact small{color:var(--mu);font-size:14px}.fact div{text-align:right;font-size:16px}
+.row{display:grid;grid-template-columns:240px 1fr;gap:40px;padding:38px 24px;border-bottom:1px solid var(--ln);border-radius:14px;transition:background .35s,transform .35s}
+.row:hover{background:var(--sf);transform:translateX(8px)}
+.dt{color:var(--accent);font-size:14px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px}
+.org{color:var(--mu);font-size:15px;margin:0}
+.rt{font-size:34px;margin:0 0 14px;line-height:1.15}
+.row p.ds,.row li{color:var(--mu);line-height:1.65;font-size:16px}
+.row p.ds{margin:0}.row ul{margin:0;padding-left:20px}.row li{margin-bottom:6px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:14px;min-height:420px;transition:transform .4s,border-color .4s,box-shadow .4s}
+.card:hover{transform:translateY(-8px);border-color:var(--accent);box-shadow:0 26px 50px -26px rgba(0,0,0,.7)}
+.th{overflow:hidden;height:150px;border-radius:12px;border:1px dashed #3A4651;display:flex;align-items:center;justify-content:center;color:var(--mu);font-size:14px;transition:background .4s}.th:has(img){border:0}.th img{width:100%;height:100%;object-fit:cover;display:block}
+.card:hover .th{background:#212C35}
+.tag{color:var(--accent);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.ct{font-size:28px;margin:0;line-height:1.15}
+.cd{color:var(--mu);font-size:15px;line-height:1.6;margin:0;flex:1}
+.lk{color:var(--accent);text-decoration:none;font-size:15px;font-weight:500;display:inline-flex;align-items:center;gap:8px;min-height:44px;transition:gap .3s}
+.lk:hover{gap:14px}
+.cdash{border-style:dashed;background:transparent}
+.chips{display:flex;flex-wrap:wrap;gap:12px}
+.chip{padding:12px 20px;border:1px solid var(--ln);border-radius:999px;font-size:15px;transition:transform .3s,border-color .3s,background .3s,color .3s}
+.chip:hover{transform:translateY(-4px);border-color:var(--accent);background:var(--sf);color:var(--accent)}
+.ed{padding:20px 0;border-bottom:1px solid var(--ln);transition:padding .35s,border-color .35s}
+.ed:hover{padding-left:12px;border-color:var(--accent)}
+.ed b{display:block;font-weight:500;font-size:17px;margin-bottom:4px}
+.ed span{color:var(--mu);font-size:15px}
+.sub{font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 24px}
+.cta{font-size:84px;line-height:1.05;margin:0 0 36px}
+.cta em{color:var(--accent)}
+.cl{display:flex;flex-wrap:wrap;gap:12px 32px;margin-top:48px}
+.cl a{color:var(--mu);text-decoration:none;font-size:15px;padding:12px 0;position:relative;transition:color .3s}
+.cl a:hover{color:var(--accent)}
+.ft{display:flex;justify-content:space-between;color:var(--mu);font-size:14px;padding:28px 0;border-top:1px solid var(--ln)}
+@media(max-width:860px){
+.wrap{padding:0 22px}.hero,.two,.grid3,.row{grid-template-columns:1fr}.hero{gap:48px;padding-top:32px}
+.hn{font-size:56px}.sh h2{font-size:40px}.cta{font-size:52px}.big{font-size:26px}.row{gap:14px}.nl a{margin-left:18px}.rt{font-size:28px}.ft{flex-direction:column;gap:8px}.sec{padding:72px 0}}
+@media(prefers-reduced-motion:reduce){.a{animation:none;opacity:1}.phw{animation:none}}
+/* Zoom: shows the middle half of the photo (head to stomach). Works for any 3:4 photo, e.g. 3000x4000.
+   Tweak: left = horizontal shift, top = vertical shift (more negative = shows lower part of photo), width = zoom (200% = 2x). */
+.ph-img{position:absolute;max-width:none;height:auto;width:200%;left:-55.8%;top:-65%;display:block}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+</style>
+</head>
+<body>
+<!-- HOW TO EDIT: 1) Save your full-size photo as photo.jpg in the same folder as this file (3:4 portrait, e.g. 3000x4000). The CSS below crops and zooms it to your head-to-stomach framing. 2) Replace each href="#" on the [PROJECT LINK] anchors with your real URL (add target="_blank" rel="noopener" to open in a new tab). 3) Replace the [YOUR LINK] anchors in the Contact section. -->
+<div class="pg">
+<div class="wrap">
+<div class="nav a">
+<div class="nl"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+</div>
+<div class="hero" id="top">
+<div>
+<div class="eyebrow a d1">AI and Automation Developer</div>
+<h1 class="hn serif a d2">Eshaan Sarosh <em>G J</em></h1>
+<p class="lead a d3">Engineering student in Bengaluru building practical technology for real-world problems, from WhatsApp chatbots and AI-powered business automation to full-stack web apps.</p>
+<div class="a d4"><a class="btn b1" href="#projects">View my work <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn b2" href="#contact">Get in touch</a></div>
+</div>
+<div class="a d3"><div class="phw"><div class="ph"><b>Your portrait here</b><span>Save your photo as photo.jpg next to this file</span><img class="ph-img" src="photo.jpg" alt="Portrait of Eshaan Sarosh G J" onerror="this.remove()"></div></div></div>
+</div>
+</div>
+
+<div class="sec" id="about"><div class="wrap">
+<div class="sh"><span class="sn">01</span><h2 class="serif">About</h2></div>
+<div class="two">
+<p class="big serif">Passionate about building <em>practical technology</em> solutions to real-world problems, with hands-on experience in Python, AI APIs, chatbots, backend development and IoT, and always expanding my software skills.</p>
+<div>
+<div class="fact"><small>Based in</small><div>Bengaluru, India</div></div>
+<div class="fact"><small>Studying</small><div>B.E. Computer Science<br>Atria Institute of Technology</div></div>
+<div class="fact"><small>Languages</small><div>English, Hindi, Urdu, Kannada</div></div>
+</div>
+</div>
+</div></div>
+
+<div class="sec" id="experience"><div class="wrap">
+<div class="sh"><span class="sn">02</span><h2 class="serif">Experience</h2></div>
+<div class="row">
+<div><p class="dt">Jan 2026 – Present</p><p class="org">College project: ReSkilled, Education Management Platform</p></div>
+<div><h3 class="rt serif">Software Developer</h3>
+<ul><li>Built an education-focused web app shaped by teacher research and surveys.</li><li>Designed the frontend in HTML, CSS and JavaScript, with potential React integration.</li><li>Planned the backend architecture and database schema for platform data.</li><li>Turned real teacher requirements into features using user research and design thinking.</li></ul></div>
+</div>
+<div class="row">
+<div><p class="dt">May 2026 – Present</p><p class="org">YouTube Shorts, Independent / Freelance</p></div>
+<div><h3 class="rt serif">Digital Content Creator</h3>
+<ul><li>Created and published short-form YouTube content.</li><li>Researched topics, developed ideas and wrote video scripts.</li><li>Edited videos, tuning pacing, captions, hooks and visuals for audience retention.</li></ul></div>
+</div>
+<div class="row">
+<div><p class="dt">Sept 2025 – Jan 2026</p><p class="org">Independent / Freelance</p></div>
+<div><h3 class="rt serif">AI &amp; Automation Developer</h3>
+<p class="ds">Developed AI-powered business automation using Python, Flask, OpenAI API and WhatsApp APIs. Built a restaurant chatbot for menu browsing, table bookings, orders, reviews and automated business reports, with third-party API integrations and backend workflows for real customer interactions.</p></div>
+</div>
+</div></div>
+
+<div class="sec" id="projects"><div class="wrap">
+<div class="sh"><span class="sn">03</span><h2 class="serif">Projects</h2></div>
+<div class="grid3">
+<div class="card">
+    <div class="th"><img src="chatbot.png" alt="Restaurant chatbot screenshot"></div>
+<span class="tag">AI · Automation</span>
+<h3 class="ct serif">Restaurant WhatsApp Chatbot</h3>
+<p class="cd">Menu browsing, table bookings, orders, reviews and automated business reports, built with Python, Flask, OpenAI API and WhatsApp APIs.</p>
+</div>
+<div class="card">
+    <div class="th"><img src="reskilled.png" alt="ReSkilled platform screenshot"></div>
+<span class="tag">Full Stack · Education</span>
+<h3 class="ct serif">ReSkilled</h3>
+<p class="cd">An education management platform shaped by teacher research, with a custom frontend, backend architecture and database schema.</p>
+<a class="lk" href="https://reskilled.onrender.com/" target="_blank" rel="noopener">[PROJECT LINK] <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+</div>
+</div>
+</div></div>
+
+<div class="sec" id="skills"><div class="wrap">
+<div class="two" style="grid-template-columns:1fr 1fr">
+<div>
+<p class="sub">Skills</p>
+<div class="chips"><span class="chip">AI &amp; Automation</span><span class="chip">Python &amp; Java</span><span class="chip">Web Design</span><span class="chip">Full Stack Development</span><span class="chip">Chatbot Development</span><span class="chip">Problem-Solving</span><span class="chip">Computer Literacy</span><span class="chip">Content Creation</span><span class="chip">Strong Communication</span></div>
+</div>
+<div>
+<p class="sub">Education</p>
+<div class="ed"><b>Atria Institute of Technology</b><span>Bachelor of Engineering, CSE · 2024 – 2028</span></div>
+<div class="ed"><b>Sri Chaitanya College</b><span>Senior Secondary School · 2022 – 2024</span></div>
+<div class="ed"><b>HAL Public School</b><span>Primary &amp; Secondary School · 2010 – 2022</span></div>
+</div>
+</div>
+</div></div>
+
+<div class="sec" id="contact"><div class="wrap">
+<p class="sub">Contact</p>
+<h2 class="cta serif">Let’s build something <em>useful</em> together.</h2>
+<a class="btn b1" href="mailto:eshaansaroshgj@gmail.com">eshaansaroshgj@gmail.com <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="btn b2" href="tel:+919742216585">+91 97422 16585</a>
+<div class="cl"><a href="https://github.com/eshaaaaann" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/eshaansaroshgj/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.youtube.com/@whatssinthenameee" target="_blank" rel="noopener">YouTube</a></div>
+</div>
+<div class="wrap"><div class="ft"><span>© 2026 Eshaan Sarosh G J</span><span>Bengaluru, India</span></div></div>
+</div>
+</div>
+</body>
+</html>
